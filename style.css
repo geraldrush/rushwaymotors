@@ -192,9 +192,11 @@ textarea {
 }
 
 
-#address {
+#address h2, #address p{
 	text-align: center;
+	font-size: 1.5em;
 }
+
 
 #container1 {
 	margin: 2%;
