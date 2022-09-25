@@ -341,7 +341,16 @@ textarea {
 /*Media Query for Tablet Viewport*/
 @media screen and (max-width: 481px), print {
 /*Style rule for header*/
-header {
+form {
+	margin: 2% auto;
+	width: 60%;
+	border: 4px solid #01597c;
+	padding: 2em;
+	border-radius: 1em;
+	background-color:  #152640;
+	font-size: 1.2em;
+}
+	header {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
