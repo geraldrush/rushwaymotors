@@ -211,7 +211,7 @@ textarea {
 #hero {
 	max-width:100%;
 	height: 80vh;
-	background-image: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.8)), url(entrance.JPG);
+	background-image: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.8)), url(entrance.jpeg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
