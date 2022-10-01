@@ -7,17 +7,18 @@
 	
 }
 
-a{
-	color: white;
+article {
+	background-color: white;
+	padding: 2%;
 }
 
-article {
-	
+article h2{
+	padding-bottom: 1%;
 }
 
 aside {
 	float: left;
-	width: 20%;
+	width: 25%;
 	margin:0 5%;
 	border: 2px solid black;
 	padding: .5%;
@@ -26,7 +27,7 @@ aside {
 
 body {
 	background: linear-gradient(#152640,#add8e6);
-	font-family: Roboto, calibri;
+	font-family: 'Roboto','Montserrat', sans-serif;
 }
 
 
@@ -40,7 +41,6 @@ footer {
 	background-color: black;
 	color: white;
 	border-top: 2%;
-	font-size: 0.75em;
 }
 
 h2 {
@@ -51,8 +51,7 @@ h2 {
 	max-width: 50%;
 	height: 30%;
 	border: 5px solid black;
-	position: relative;
-	left: 25%;
+	margin: auto;
 }
 
 nav {
@@ -61,19 +60,18 @@ nav {
 }
 
 nav li {
-	padding: 0.5% 4%;
+	padding: 0.5% 2%;
 	list-style-type: none;
 }
 
 nav li a {
+	padding:  25% 15%;
 	text-decoration: none;
-	font-size: 1.5em;
+	font-size: 1.75em;
 	font-weight: bold;
 	color: /*#01597c*/white;
-	/*border: 1px solid grey;
-	padding: 5% 10%;
-	border-radius: 8px;
-	background-color: #86bed7;*/
+
+
 	
 }
 
@@ -81,6 +79,7 @@ nav ul {
 	display: flex;
 	align-items: center;
 	width:100%;
+	max-width: 100%;
 }
 
 nav ul li#logo {
@@ -90,7 +89,7 @@ nav ul li#logo {
 #taction, #eaction {
 	text-decoration: none;
 	margin: .5% 0;
-	font-size: 1.25em;
+	font-size: 1.5em;
 	font-weight: bold;
 	border-radius: 5px;
 	border: 2px solid gray;
@@ -112,12 +111,25 @@ nav ul li#logo {
 }
 
 #container1 img {
-	max-width: 50%;
-	height: 30%;
+	max-width: 30%;
+	height: 20%;
 	border: 5px solid black;
 	position: relative;
-	left: 25%;
+	left: 35%;
 }
+
+a {
+	color: white;
+	
+}
+
+ a:hover {
+	opacity: 60%;
+	 text-decoration: none;
+	 background-color: gray;
+ }
+ 
+ 
 
 /*Form styling*/
 
@@ -167,7 +179,7 @@ input[type="checkbox"] {
 input,
 select,
 textarea {
-  border: 3px solid black;
+  border: 3px solid /*#333*/ black;
   background-color: white;
   border-radius: 0.25em;
 }
@@ -175,12 +187,18 @@ textarea {
 label {
 	margin-top: 2%;
 	display: block;
-	color:#86bed7;
+	/*color:#86bed7;*/
+	color: white;
 }
 
 legend {
 	padding: 0 0.5em;
-	color:#86bed7;
+	/*color:#86bed7;*/
+	color: white;
+}
+
+p {
+	margin: 1%;
 }
 
 
@@ -197,9 +215,8 @@ textarea {
 
 #address h2, #address p{
 	text-align: center;
-	font-size: 1.25em;
+	font-size: 1.10em;
 }
-
 
 #container1 {
 	margin: 2%;
@@ -208,6 +225,7 @@ textarea {
 
 #extra {
 	margin: 2%;
+	
 }
 
 #front{
@@ -219,7 +237,8 @@ textarea {
 
 #hero {
 	max-width:100%;
-	height: 50vh;
+	width:100%;
+	height: 60vh;
 	background-image: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.8)), url(entrance.jpeg);
 	background-position: center;
 	background-repeat: no-repeat;
@@ -227,12 +246,18 @@ textarea {
 	position: relative;
 }
 
+
 #hform {
-	color:#86bed7;	
+	color:white;	
 }
 
 #list {
-	text-align: center;
+	padding-left: 35%;
+}
+
+#list h1 {
+	color:white;
+	margin-bottom: 1%;
 }
 
 #list li a {
@@ -255,11 +280,12 @@ textarea {
 	font-weight: bold;
 	margin: 2%;
 	text-shadow: 10px 10px 10px gray;
-	color: #01597c;
+	color: white/*#01597c;*/
 }
 
 .aim {
 	text-align: center;
+	color: white;
 }
 
 .container {
@@ -293,19 +319,15 @@ textarea {
 }
 
 .lg {
-	height: 50%;
-	width: 50%;
+	width: 40%;
 }
 
 .location{
 	display: flex;
 	justify-content: center;
-
 }
 
 .map {
-	/*position: relative;
-	left: 30%;*/
 	border: 5px solid black;
 	max-width:100%;
 	max-height: 100%;
@@ -321,6 +343,10 @@ textarea {
 
 .service {
 	margin: 5%;
+	margin: 2px solid black;
+	background-color: white;
+	padding: 2%;
+	border-radius: 25px;
 }
 
 .small-label {
@@ -329,8 +355,6 @@ textarea {
 }
 
 .sq {
-	width: 250px;
-	height: 250px;
 	background-color: #01597c;
 	margin: 20px;
 	padding: 2%;
@@ -339,10 +363,52 @@ textarea {
 	color: lightblue;
 }
 
+.sq p {
+	width: 100%;
+	margin-top: 4%;
+}
+
+/*Table styling */
+
+caption {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 1%;
+}
+
+table {
+	border: 2px solid black;
+	margin: auto;
+	margin-top: 2%;
+	width: 50%;
+	text-align: center;
+	color: white;
+}
+
+th, td {
+	border: 2px solid black;
+}
+
+th {
+	font-size: 1.15em;
+	background-color: black;
+	color: white;
+}
+
+tr:nth-child(2), tr:nth-child(9) {
+	background-color: #683f05;
+}
+
 
 .top {
 	background-color: white;
-	border-radius: 5%;
+	border-radius: 20px;
+}
+
+video {
+	max-width: 100%;
+	display: block;
+	margin: 5% auto;
 }
 
 
@@ -354,18 +420,18 @@ textarea {
 }*/
 
 /*Style rules for mobile viewport*/
-/*Media Query for Tablet Viewport*/
+/*Media Query for mobile Viewport*/
 @media screen and (max-width: 481px), print {
 /*Style rule for header*/
-form {
-	margin: 2% auto;
-	max-width: 100%;
-	width: 75%;
-	border: 4px solid #01597c;
-	padding: 2em;
-	border-radius: 1em;
-	background-color:  #152640;
-	font-size: 1.08em;
+
+#hero {
+	max-width:100%;
+	height: 50vh;
+	background-image: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.8)), url(entrance.jpeg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;*/
+	position: relative;
 }
 
 fieldset{
@@ -373,10 +439,21 @@ fieldset{
 	border-radius: .5em;
 	padding: 2%;
 	margin-top: 2%;
-	margin-left: 1%;
+	margin: 5%;
 }
 
-	header{
+form {
+	margin: auto;
+	max-width: 80%;
+	width: 80%;
+	border: 2px solid #01597c;
+	padding: 2em;
+	border-radius: 1em;
+	background-color:  #152640;
+	font-size: 1.2em;
+}
+
+header {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
@@ -391,8 +468,13 @@ input[type="password"],
 select,
 textarea {
 	display: block;
-	width: 80%;
-	min-height: 1.9em;
+	width: 90%;
+	min-height: 1.7em;
+}
+
+legend {
+	padding: 0 0.2em;
+	color:#86bed7;
 }
 
 nav ul {
@@ -402,10 +484,11 @@ nav ul {
 	
 }
 nav li a {
+	padding: 0% 25%;
 	text-decoration: none;
 	font-size: 1.5em;
 	font-weight: bold;
-	color: #01597c;
+	color: white;
 	text-align: center;
 	border: none;
 	border-radius: none;
@@ -417,19 +500,17 @@ nav li a {
 }
 
 .lg {
-	position: relative;
-	left: 23%;
+	margin: auto;
 }
 
 .location{
 	display: flex;
 	justify-content: center;
-
 }
 
 .map {
-	max-width: 80%;
-	height: 80%;
+	width: 80%;
+	max-width: 100%;
 }
 
 .menu {
@@ -442,14 +523,14 @@ nav li a {
 }
 
 #btn {
+	margin: 2% auto;
 	position: relative;
-	left: 25%;
-	padding: .75em;
-	margin-top: 5%;
+	left: 30%;
+	/*padding: .75em;
+	margin-top: 2%;
 	font-size: 1em;
 	font-weight: bold;
-	border-radius: 5px;
-
+	border-radius: 5px;*/
 }
 
 #logo {
@@ -465,15 +546,134 @@ body {
 }
 }
 
-@media screen and  (min-width: 481px) and (max-width: 768px), print {
+/*Media Query for tablet Viewport*/
+@media screen and  (min-width: 481px) and (max-width: 768px), print {		
+.location{
+	display: flex;
+	justify-content: center;
+}
+
+
+.map {
+	width: 80%;
+	max-width: 100%;
+}
+
+body {
+	max-width: 100%;
+}
+
+form {
+	margin: auto;
+	max-width: 80%;
+	width: 90%;
+	border: 2px solid #01597c;
+	padding: 2em;
+	border-radius: 1em;
+	background-color:  #152640;
+	font-size: 1.2em;
+}
+
+input[type="text"], 
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+select,
+textarea {
+	display: block;
+	width: 90%;
+	min-height: 1.7em;
+}
+
+ul li .lg {
+	width: 40px;
+}
+
+.menu, .lg {
+	display: inline-block;
+}
+
+nav li a {
+	text-decoration: none;
+	font-size: 1.01em;
+	font-weight: bold;
+	color: white;
+}
+
+#nav {
+	max-width: 100%;
+	padding: 0.5%;
+}
+
+nav li {
+	padding: 0.5% 3%;
+	list-style-type: none;
+}
 
 
 
+#nav ul {
+	display: flex;
+	flex-shrink: 0;
+	align-items: center;
+}
 
+nav ul li#logo {
+	margin-right: auto;
+}
 
+a {
+	color: white;
+	
+}
 
+aside {
+	display: none;
+}
 
+}
 
+@media screen and  (min-width: 768px), print {
 
-
+	nav li a {
+		padding:  25% 15%;
+		text-decoration: none;
+		font-size: 1.65em;
+		font-weight: bold;
+		color: white;
+	}
+	
+	nav {
+		max-width: 100%;
+		padding: 0.5%;
+	}
+	
+	nav li {
+		padding: 0.5% 2%;
+		list-style-type: none;
+	}
+	
+	
+	
+	nav ul {
+		display: flex;
+		align-items: center;
+		width:100%;
+		max-width: 100%;
+	}
+	
+	nav ul li#logo {
+		margin-right: auto;
+	}
+	
+	a {
+		color: white;
+		
+	}
+	
+	 a:hover {
+		opacity: 60%;
+		 text-decoration: none;
+		 background-color: gray;
+	 }
 }
